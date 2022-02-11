@@ -76,8 +76,6 @@ class MapParams(object):
             self.type = "sat"
         elif event.key == pygame.K_3:  # 3
             self.type = "sat,skl"
-        elif event.key == pygame.K_DELETE:  # DELETE
-            self.search_result = None
         elif event.key == pygame.K_TAB:  # TAB
             try:
                 self.lon, self.lat = get_coordinates(input_field())  # Enter
